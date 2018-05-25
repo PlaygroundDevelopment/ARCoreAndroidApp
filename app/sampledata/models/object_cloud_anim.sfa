@@ -1,0 +1,69 @@
+{
+   materials: [
+      {
+         name: "blinn1",
+         parameters: [
+            {
+               baseColor: "object_cloud_diffuse",
+            },
+            {
+               baseColorTint: [
+                  0.80000000000000004,
+                  0.80000000000000004,
+                  0.80000000000000004,
+                  1,
+               ],
+            },
+            {
+               metallic: 0,
+            },
+            {
+               roughness: 0.49053200000000002,
+            },
+            {
+               opacity: null,
+            },
+         ],
+         source: "build/sceneform_sdk/default_materials/obj_material.sfm",
+      },
+   ],
+   model: {
+      attributes: [
+         "Position",
+         "TexCoord",
+         "Orientation",
+      ],
+      file: "sampledata/models/object_cloud_anim.obj",
+      name: "object_cloud_anim",
+      scale : 0.1,
+      suggested_collision: {
+         center: {
+            x: 0,
+            y: 0,
+            z: 0,
+         },
+         size: {
+            x: 1,
+            y: 1,
+            z: 1,
+         },
+         type: "Box",
+      },
+   },
+   samplers: [
+      {
+         file: "sampledata/models/object_cloud_specular.png",
+         name: "object_cloud_specular",
+         params: {
+            usage_type: "Data",
+         },
+         pipeline_name: "/object_cloud_specular.png",
+      },
+      {
+         file: "sampledata/models/object_cloud_diffuse.png",
+         name: "object_cloud_diffuse",
+         pipeline_name: "/object_cloud_diffuse.png",
+      },
+   ],
+   version: "0.51:1",
+}

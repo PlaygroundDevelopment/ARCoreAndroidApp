@@ -1,0 +1,69 @@
+{
+   materials: [
+      {
+         name: "blinn1",
+         parameters: [
+            {
+               baseColor: "object_star_diffuse",
+            },
+            {
+               baseColorTint: [
+                  0.80000000000000004,
+                  0.80000000000000004,
+                  0.80000000000000004,
+                  1,
+               ],
+            },
+            {
+               metallic: 0,
+            },
+            {
+               roughness: 0.49053200000000002,
+            },
+            {
+               opacity: null,
+            },
+         ],
+         source: "build/sceneform_sdk/default_materials/obj_material.sfm",
+      },
+   ],
+   model: {
+      attributes: [
+         "Position",
+         "TexCoord",
+         "Orientation",
+      ],
+      file: "sampledata/models/object_star_anim.obj",
+      name: "object_star_anim",
+      scale : 0.1,
+      suggested_collision: {
+         center: {
+            x: 0,
+            y: 0,
+            z: 0,
+         },
+         size: {
+            x: 1,
+            y: 1,
+            z: 1,
+         },
+         type: "Box",
+      },
+   },
+   samplers: [
+      {
+         file: "sampledata/models/object_star_diffuse.png",
+         name: "object_star_diffuse",
+         pipeline_name: "../../../objects/star/export/object_star_diffuse.png",
+      },
+      {
+         file: "sampledata/models/object_star_specular.png",
+         name: "object_star_specular",
+         params: {
+            usage_type: "Data",
+         },
+         pipeline_name: "../../../objects/star/export/object_star_specular.png",
+      },
+   ],
+   version: "0.51:1",
+}

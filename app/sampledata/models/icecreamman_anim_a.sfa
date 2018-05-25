@@ -1,0 +1,77 @@
+{
+   materials: [
+      {
+         name: "ice_cream_base_lo:blinn1",
+         parameters: [
+            {
+               baseColor: "icecreamman_diffuse",
+            },
+            {
+               baseColorTint: [
+                  0.80000000000000004,
+                  0.80000000000000004,
+                  0.80000000000000004,
+                  1,
+               ],
+            },
+            {
+               metallic: 0,
+            },
+            {
+               roughness: 0.49053200000000002,
+            },
+            {
+               opacity: null,
+            },
+         ],
+         source: "build/sceneform_sdk/default_materials/obj_material.sfm",
+      },
+   ],
+   model: {
+      attributes: [
+         "Position",
+         "TexCoord",
+         "Orientation",
+      ],
+      file: "sampledata/models/icecreamman_anim_a.obj",
+      name: "icecreamman_anim_a",
+      scale : 0.1,
+      suggested_collision: {
+         center: {
+            x: 0,
+            y: 0,
+            z: 0,
+         },
+         size: {
+            x: 1,
+            y: 1,
+            z: 1,
+         },
+         type: "Box",
+      },
+   },
+   samplers: [
+      {
+         file: "sampledata/models/icecreamman_diffuse.png",
+         name: "icecreamman_diffuse",
+         pipeline_name: "anim/Hip Hop Dancing (1).fbm/icecreamman_diffuse.png",
+      },
+      {
+         file: "sampledata/models/icecreamman_specular.png",
+         name: "icecreamman_specular",
+         params: {
+            usage_type: "Data",
+         },
+         pipeline_name: "anim/Hip Hop Dancing (1).fbm/icecreamman_specular.png",
+      },
+      {
+         file: "sampledata/models/icecreamman_normal.png",
+         name: "icecreamman_normal",
+         params: {
+            usage_type: "Data",
+         },
+         pipeline_name: "anim/Hip Hop Dancing (1).fbm/icecreamman_normal.png",
+      },
+   ],
+   version: "0.51:1",
+}

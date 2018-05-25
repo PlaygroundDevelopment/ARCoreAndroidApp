@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "challenge.com.arcoreapp"
+        minSdkVersion 24
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:design:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation "com.google.ar.sceneform.ux:sceneform-ux:1.0.0"
+}
+
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+sceneform.asset('sampledata/models/emoji_heart_anim.obj',
+        'default',
+        'sampledata/models/emoji_heart_anim.sfa',
+        'src/main/assets/emoji_heart_anim')
+
+sceneform.asset('sampledata/models/emoji_smile_anim_a.obj',
+        'default',
+        'sampledata/models/emoji_smile_anim_a.sfa',
+        'src/main/assets/emoji_smile_anim_a')
+
+sceneform.asset('sampledata/models/emoji_wow_anim.obj',
+        'default',
+        'sampledata/models/emoji_wow_anim.sfa',
+        'src/main/assets/emoji_wow_anim')
+
+sceneform.asset('sampledata/models/icecreamman_anim_a.obj',
+        'default',
+        'sampledata/models/icecreamman_anim_a.sfa',
+        'src/main/assets/icecreamman_anim_a')
+
+sceneform.asset('sampledata/models/object_cloud_anim.obj',
+        'default',
+        'sampledata/models/object_cloud_anim.sfa',
+        'src/main/assets/object_cloud_anim')
+
+sceneform.asset('sampledata/models/object_star_anim.obj',
+        'default',
+        'sampledata/models/object_star_anim.sfa',
+        'src/main/assets/object_star_anim')
+
+sceneform.asset('sampledata/models/pumpkinman_anim.obj',
+        'default',
+        'sampledata/models/pumpkinman_anim.sfa',
+        'src/main/assets/pumpkinman_anim')

@@ -1,0 +1,29 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v3.1.187496374)
+
+newmtl blinn1
+Kd 0.8 0.8 0.8
+Ka 0 0 0
+Ks 0.5 0.5 0.5
+Ke 0 0 0
+d 1
+Ns 6.31179
+illum 2
+map_Kd /pumpkinman_body_diffuse.png
+map_Ks ../../../../../../Downloads/Thriller Part 1.fbm/pumpkinman_body_specular.png
+bump /pumpkinman_body_normal.png
+map_bump /pumpkinman_body_normal.png
+
+newmtl object_pumpkinman_anim_v2:blinn1
+Kd 0.8 0.8 0.8
+Ka 0 0 0
+Ks 0.5 0.5 0.5
+Ke 0 0 0
+d 1
+Ns 6.31179
+illum 2
+map_Kd /pumpkinman_head_diffuse.png
+map_Ks /pumpkinman_head_specular.png
+bump /pumpkinman_head_normal.png
+map_bump /pumpkinman_head_normal.png
+

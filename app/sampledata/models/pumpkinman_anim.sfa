@@ -1,0 +1,124 @@
+{
+   materials: [
+      {
+         name: "blinn1",
+         parameters: [
+            {
+               baseColor: "pumpkinman_body_diffuse",
+            },
+            {
+               baseColorTint: [
+                  0.80000000000000004,
+                  0.80000000000000004,
+                  0.80000000000000004,
+                  1,
+               ],
+            },
+            {
+               metallic: 0,
+            },
+            {
+               roughness: 0.49053200000000002,
+            },
+            {
+               opacity: null,
+            },
+         ],
+         source: "build/sceneform_sdk/default_materials/obj_material.sfm",
+      },
+      {
+         name: "object_pumpkinman_anim_v2:blinn1",
+         parameters: [
+            {
+               baseColor: "pumpkinman_head_diffuse",
+            },
+            {
+               baseColorTint: [
+                  0.80000000000000004,
+                  0.80000000000000004,
+                  0.80000000000000004,
+                  1,
+               ],
+            },
+            {
+               metallic: 0,
+            },
+            {
+               roughness: 0.49053200000000002,
+            },
+            {
+               opacity: null,
+            },
+         ],
+         source: "build/sceneform_sdk/default_materials/obj_material.sfm",
+      },
+   ],
+   model: {
+      attributes: [
+         "Position",
+         "TexCoord",
+         "Orientation",
+      ],
+      file: "sampledata/models/pumpkinman_anim.obj",
+      name: "pumpkinman_anim",
+      scale : 0.1,
+      suggested_collision: {
+         center: {
+            x: 0,
+            y: 0,
+            z: 0,
+         },
+         size: {
+            x: 1,
+            y: 1,
+            z: 1,
+         },
+         type: "Box",
+      },
+   },
+   samplers: [
+      {
+         file: "sampledata/models/pumpkinman_head_diffuse.png",
+         name: "pumpkinman_head_diffuse",
+         pipeline_name: "/pumpkinman_head_diffuse.png",
+      },
+      {
+         file: "sampledata/models/pumpkinman_head_normal.png",
+         name: "pumpkinman_head_normal",
+         params: {
+            usage_type: "Data",
+         },
+         pipeline_name: "/pumpkinman_head_normal.png",
+      },
+      {
+         file: "sampledata/models/pumpkinman_body_normal.png",
+         name: "pumpkinman_body_normal",
+         params: {
+            usage_type: "Data",
+         },
+         pipeline_name: "/pumpkinman_body_normal.png",
+      },
+      {
+         file: "sampledata/models/pumpkinman_body_diffuse.png",
+         name: "pumpkinman_body_diffuse",
+         pipeline_name: "/pumpkinman_body_diffuse.png",
+      },
+      {
+         file: "sampledata/models/pumpkinman_body_specular.png",
+         name: "pumpkinman_body_specular",
+         params: {
+            usage_type: "Data",
+         },
+         pipeline_name: "../../../../../../Downloads/Thriller Part 1.fbm/pumpkinman_body_specular.png",
+      },
+      {
+         file: "sampledata/models/pumpkinman_head_specular.png",
+         name: "pumpkinman_head_specular",
+         params: {
+            usage_type: "Data",
+         },
+         pipeline_name: "/pumpkinman_head_specular.png",
+      },
+   ],
+   version: "0.51:1",
+}
